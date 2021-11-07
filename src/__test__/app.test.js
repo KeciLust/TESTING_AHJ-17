@@ -1,6 +1,7 @@
 import puppeteer from 'puppeteer';
 import Valid from '../js/validation';
 
+const valid = new Valid();
 jest.setTimeout(30000); // default puppeteer timeout
 
 describe('Credit Card Validator form', () => {
@@ -10,7 +11,7 @@ describe('Credit Card Validator form', () => {
   const baseUrl = 'http://localhost:9000';
 
   beforeAll(async () => {
-    server = Valid(`${__dirname}/e2e.server.js`);
+    server = valid(`${__dirname}/e2e.server.js`);
     await new Promise((resolve, reject) => {
       server.on('error', reject);
       server.on('message', (message) => {
@@ -32,8 +33,17 @@ describe('Credit Card Validator form', () => {
     await browser.close();
     server.kill();
   });
-
-  test('should add do something', async () => {
+  const cases = [
+    ['4556480445308228', true],
+    ['5369607016438703', true],
+    ['5369607016438707', false],
+  ];
+  test.each(cases)('should add do something', async (a, expected) => {
     await page.goto(baseUrl);
+    const input = await page.$(['class = input']);
+    await input.type(a);
+    const button = await page.$(['class = button']);
+    button.click();
+    expect(valid.luhn()).toBe(expected);
   });
 });
