@@ -3,7 +3,7 @@
 /* eslint-disable no-plusplus */
 export default function check(num) {
   const arr = Array.from(num);
-  if (arr[0] === 4) {
+  if (Number(arr[0]) === 4) {
     return 'visa';
   }
   let x = 0;
@@ -11,7 +11,7 @@ export default function check(num) {
     x += arr[i];
   }
 
-  if ((arr[0] === 5 && arr[1] > 0 && arr[1] < 6) || (Number(x) >= 222100 && Number(x) <= 272099)) {
+  if ((Number(arr[0]) === 5 && arr[1] > 0 && arr[1] < 6) || (Number(x) >= 222100 && Number(x) <= 272099)) {
     return 'mc';
   }
   let z = 0;

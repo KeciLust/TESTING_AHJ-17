@@ -10,9 +10,13 @@ button.addEventListener('click', (e) => {
   e.preventDefault();
   if (luhn(input.value)) {
     const cart = document.querySelector(`.${check(input.value)}`);
-    cart.classList.remove('opacity');
-    input.value = '';
+    if (cart) {
+      cart.classList.remove('opacity');
+      input.value = '';
+    } else {
+      alert('Не корректный номер карты!');
+    }
   } else {
-    alert('Не правильный номер крты!');
+    alert('Не правильный номер карты!');
   }
 });
