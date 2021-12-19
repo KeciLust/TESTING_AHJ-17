@@ -1,5 +1,18 @@
-import Valid from './validation';
+import luhn from './luhn';
+import check from './check';
 
-const valid = new Valid();
-valid.hidden();
-valid.listner();
+const input = document.querySelector('.input');
+const button = document.querySelector('.button');
+const carts = document.querySelectorAll('.cart_item');
+
+button.addEventListener('click', (e) => {
+  carts.forEach((el) => el.classList.add('opacity'));
+  e.preventDefault();
+  if (luhn(input.value)) {
+    const cart = document.querySelector(`.${check(input.value)}`);
+    cart.classList.remove('opacity');
+    input.value = '';
+  } else {
+    alert('Не правильный номер крты!');
+  }
+});

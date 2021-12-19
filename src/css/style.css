@@ -1,38 +1,60 @@
 body {
     background-color: black;
 }
-#container {
-    margin-right: auto;
+.container {
     margin-left: auto;
-    width: 700px;
+    margin-right: auto;
+    background-color: floralwhite;
+    width: 600px;
     height: 200px;
-    background-color: white;
-    margin-top: 100px;
-    
+    margin-top: 150px;
+    border-radius: 10px;
 }
-.cards{
+.cart {
     display: flex;
-margin-top: 20px;
-margin-right: 20px;
-margin-left: 20px;
-height: 80px;
-padding: 0;
+    flex-wrap: nowrap;
+    margin-left: 50px;
+    width: 500px;
+    height: 100px;
+    list-style-type: none;
+    padding: 0;
+    justify-content: space-around;
 }
-.card{
-width: 25%;
-list-style-type: none;
+.cart_item {
+    background-size: 80px;
+    width: 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 10px;
 }
-.img{
-    width: 140px;
+.visa {
+
+    background-image: url(../img/visa.png);
 }
-.input{
- font-size: 25px;
- height: 50px;
- margin-left: 50px;
+.world {
+    background-image: url(../img/world.png);
 }
-.button{
-    background-color: green;
-    font-size: 25px;
-    height: 50px;
-    margin-left: 100px;
+.maestro {
+    background-image: url(../img/Maestro.jpg);
 }
+.mc {
+    background-image: url(../img/MasterCard.jpg);
+}
+.opacity {
+    opacity: 0.15;
+}
+.input {
+    background-color: white;
+    font-size: 20px;
+    margin-left: 30px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+.button {
+    background-color: chartreuse;
+    font-size: 20px;
+    border-radius: 8px;
+    margin-left: 60px;
+    margin-top: 30px;
+}
+
