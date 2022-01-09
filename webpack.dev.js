@@ -7,7 +7,7 @@ module.exports = merge(common, {
   // Set the mode to development or production
   mode: 'development',
   // Control how source maps are generated
-  devtool: 'inline-source-map',
+  devtool: 'source-map',
 
   // Spin up a server for quick development
   devServer: {
@@ -15,7 +15,7 @@ module.exports = merge(common, {
     contentBase: path.resolve(__dirname, './dist'),
     open: true,
     compress: true,
-    port: 9000,
+    port: 8888,
   },
 
   plugins: [
