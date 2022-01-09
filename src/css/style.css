@@ -35,10 +35,10 @@ body {
     background-image: url(../img/world.png);
 }
 .maestro {
-    background-image: url(../img/Maestro.jpg);
+    background-image: url(../img/maestroP.png);
 }
 .mc {
-    background-image: url(../img/MasterCard.jpg);
+    background-image: url(../img/mastercardP.png);
 }
 .opacity {
     opacity: 0.15;
