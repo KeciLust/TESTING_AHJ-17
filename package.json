@@ -45,9 +45,9 @@
   "dependencies": {
     "core-js": "^3.20.2"
   },
-  "repository": "git+https://github.com/KeciLust/TESTING_AHJ-17.git",
+  "repository": "git+https://github.com/KeciLust/ahj__env.git",
   "bugs": {
-    "url": "https://github.com/KeciLust/TESTING_AHJ-17/issues"
+    "url": "https://github.com/KeciLust/ahj__env/issues"
   },
-  "homepage": "https://github.com/KeciLust/TESTING_AHJ-17#readme"
+  "homepage": "https://github.com/KeciLust/ahj__env#readme"
 }
