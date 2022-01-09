@@ -5,4 +5,4 @@
 
 TEST
 
-https://kecilust.github.io/TEST_AHJ-17/
+https://kecilust.github.io/TESTING_AHJ-17/
