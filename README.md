@@ -1,7 +1,8 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/f4yrayrum4eqr1t3?svg=true)](https://ci.appveyor.com/project/KeciLust/events-ahj-17)
+[![Build status](https://ci.appveyor.com/api/projects/status/9y2ipx3gt5kw05ru?svg=true)](https://ci.appveyor.com/project/KeciLust/testing-ahj-17)
+
 
 Домашка №4
 
 TEST
 
-https://kecilust.github.io/EVENTS_AHJ-17/
+https://kecilust.github.io/TEST_AHJ-17/
